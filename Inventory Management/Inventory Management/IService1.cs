@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.Text;
+using System.Text; 
 
 namespace Inventory_Management
 {
@@ -12,34 +13,29 @@ namespace Inventory_Management
     public interface IService1
     {
         [OperationContract]
-        string GetData(int value);
+        bool AddProduct(Product p);
 
         [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
+        Product UpdateProduct(Product p);
+        [OperationContract]
+        [FaultContract(typeof(NotFoundFolt))]
+        bool DeleteProduct(int id);
+        [OperationContract]
+        Product GetProduct(int id);
+        [OperationContract]
+        DataSet GetAllProduct();
 
         // TODO: Add your service operations here
     }
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
     // You can add XSD files into the project. After building the project, you can directly use the data types defined there, with the namespace "Inventory_Management.ContractType".
-    [DataContract]
-    public class CompositeType
+   [DataContract]
+   public class NotFoundFolt
     {
-        bool boolValue = true;
-        string stringValue = "Hello ";
-
+        private string exception;
+        
         [DataMember]
-        public bool BoolValue
-        {
-            get { return boolValue; }
-            set { boolValue = value; }
-        }
-
-        [DataMember]
-        public string StringValue
-        {
-            get { return stringValue; }
-            set { stringValue = value; }
-        }
+        public String Exception { get; set; }
     }
 }
