@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ce32b02f-d9e9-41f1-b4e3-38f0380911a7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8001/Inventory_Management" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Inventory_Management.disco" MetadataType="Disco" ID="83a38de7-21b2-496e-9712-66a3ece21be7" SourceId="1" SourceUrl="http://localhost:8001/Inventory_Management?disco" />
+    <MetadataFile FileName="Inventory_Management.xsd" MetadataType="Schema" ID="4aaa0ffd-7f91-47ab-b1d1-b288c7266bd5" SourceId="1" SourceUrl="http://localhost:8001/Inventory_Management?xsd=xsd3" />
+    <MetadataFile FileName="Inventory_Management1.xsd" MetadataType="Schema" ID="92589ce3-480c-452a-8a37-1ba132110317" SourceId="1" SourceUrl="http://localhost:8001/Inventory_Management?xsd=xsd2" />
+    <MetadataFile FileName="Inventory_Management2.xsd" MetadataType="Schema" ID="b7efc6fb-ac78-44ad-9d93-f5aadbf0886f" SourceId="1" SourceUrl="http://localhost:8001/Inventory_Management?xsd=xsd1" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="d358d5b4-d716-41ab-9d17-a1660692b5a3" SourceId="1" SourceUrl="http://localhost:8001/Inventory_Management?wsdl" />
+    <MetadataFile FileName="Inventory_Management3.xsd" MetadataType="Schema" ID="19ed3794-13ee-4164-9093-42f3d99a2022" SourceId="1" SourceUrl="http://localhost:8001/Inventory_Management?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
