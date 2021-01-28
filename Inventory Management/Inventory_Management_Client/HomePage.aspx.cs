@@ -29,7 +29,7 @@ namespace Inventory_Management_Client
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Addp.aspx");
         }
         protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
         {
